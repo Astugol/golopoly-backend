@@ -1,0 +1,22 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": "airbnb-base",
+  "overrides": [
+    {
+      "files": ["*.js"], // Archivos que deseas ignorar, puedes ajustar este patrón según tus necesidades
+      "globals": {
+        "Sequelize": "readonly" // Agrega Sequelize a la lista de variables globales y establece su valor como "readonly"
+      }
+    }
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-console": "off"
+  }
+}
